@@ -2,7 +2,7 @@
 // Thanks goes to Srijal97 for the hardwork and inspiration
 
 //I removed the RTC and put all of the sub-functions in one sketch.
-//Things to still do: Add OLED, and get mine off the breadboard and build a shield for the UNO
+//Added OLED, and built a shield for the UNO
 //2016 LeRoy F. Miller
 
 const int buttonPin = 2;     // the number of the pushbutton pin
