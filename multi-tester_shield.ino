@@ -1,9 +1,20 @@
-// Slightly modified (and inspired by): http://www.instructables.com/id/The-Companion-IC/
-// Thanks goes to Srijal97 for the hardwork and inspiration
+/* Slightly modified (and inspired by): http://www.instructables.com/id/The-Companion-IC/
+ Thanks goes to Srijal97 for the hardwork and inspiration
 
-//I removed the RTC and put all of the sub-functions in one sketch.
-//Added OLED, and built a shield for the UNO
-//2016 LeRoy F. Miller
+I removed the RTC and put all of the sub-functions in one sketch.
+Added OLED, and built a shield for the UNO
+2016 LeRoy F. Miller
+
+Feb 6, 2016 - Fixed Button Logic.
+
+ Things to do:
+ a) May add a tempature sensor or tempature probe option
+ perhaps combine this project:
+ http://www.instructables.com/id/AllSense-an-Electronic-Multi-Tool/
+ which uses a lot of different tempature sensors.
+ b) Was thinking a Transistor tester would be handy as well.
+ c) may add a buzzer for extented continuity testing.
+*/
 
 const int buttonPin = 2;     // the number of the pushbutton pin
 
@@ -108,7 +119,7 @@ void loop() {
 delay(200);
   // check if the pushbutton is pressed.
   // if it is, the buttonState is HIGH:
-  if (buttonState == LOW) {
+  if (buttonState == HIGH) {
    
     mode = mode + 1;
     
