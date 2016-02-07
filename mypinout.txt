@@ -1,0 +1,25 @@
+Pins used:
+
+Button D11 (Setup interupt on D2)
+
+Diode:
+	D12
+	A6 (Move to A2)
+
+Capacitance:
+	A0
+	D7 (Move to D8)
+	D12
+
+Resistor:
+	D2 (Move to D3)
+	D3 (Move to D4)
+	D4 (Move to D5)
+	D5 (Move to D6)
+	D6 (Move to D7)
+	A7 (Move to A1)
+
+LCD(OLED): (Add)
+	A4
+	A5
+
