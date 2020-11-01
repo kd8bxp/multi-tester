@@ -81,8 +81,8 @@ int caseno;   //for debugging, stores the case number
 #include <stdlib.h> // needed for converting float to string, has the String(float,n) function. Explained below.
 #include <SPI.h>
 #include <Wire.h>
-#include <Adafruit_GFX.h>
-#include <Adafruit_SSD1306.h>
+#include "src/Adafruit_GFX/Adafruit_GFX.h"
+#include "src/Adafruit_SSD1306/Adafruit_SSD1306.h"
 #define OLED_RESET 4
 Adafruit_SSD1306 display(OLED_RESET);
 
@@ -385,5 +385,3 @@ display.setCursor(posx, posy);
 display.print(message);
 display.display();
 }
-
-
